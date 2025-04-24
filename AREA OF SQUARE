@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+    float l,area;
+    scanf("%f",&l);
+    area=(l*l);
+    printf("%f",area);
+
+}
