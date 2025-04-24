@@ -1,0 +1,7 @@
+#include<stdio.h>
+void main()
+{
+    char tv[10]="tivith";
+    printf("%s",tv);
+
+}
