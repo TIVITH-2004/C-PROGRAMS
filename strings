@@ -1,0 +1,114 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+void main()
+{
+    char input;
+    printf("enter the character / digit: ");
+    scanf("%c",&input);
+    
+    
+    if(isdigit(input))
+    {
+        printf("it is digit\n");
+    }
+    if(isalpha(input))
+    {
+        printf("it is alpha\n");
+    }
+    if(isupper(input))
+    {
+        printf("it is upper case\n");
+    }
+    if(islower(input))
+    {
+        printf("it is lower case\n");
+    }
+    
+}
+#include <stdio.h>
+void main()
+{
+    int count=1;
+    char str[100];
+    
+    printf("Enter a string: ");
+    scanf(" %[^\n]s", str);
+    for(int i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i]==' ' && str[i+1]!=' ' && str[i+1]!='\0')
+        {
+            count++;
+        }
+    }
+    printf("Total words: %d\n", count);
+}
+#include<stdio.h>
+void main()
+{
+    char name[5];
+    printf("enter the name: ");
+    scanf("%[^\n]s",name);
+    for(int i=0;i<5;i++)
+    {
+        printf("%c\n",name[i]);
+    }
+}
+
+
+#include<stdio.h>
+void main()
+{
+    char str[100];
+    char ch;
+    int vowels=0,consonants=0;
+    printf("enter the string: ");
+    scanf("%s",str);
+    for(int i=0;str[i]!='\0';i++)
+    {
+        ch=str[i];
+        if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+        {
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+               vowels++;
+             else
+             
+                 consonants++;
+              
+        }
+    }
+    
+    printf("vowels:%d\nconsonants:%d",vowels,consonants);
+}
+#include <stdio.h>
+#include <string.h>
+void main() {
+    char str[100];
+    printf("Enter a string: ");
+    scanf(" %[^\n]s", str);
+    printf("Length of string: %ln\n", strlen(str));
+}
+#include<stdio.h>
+void main()
+{
+    char name[6];
+    printf("enter the name: ");
+    scanf("%[^\n]s",name);
+    for(int i=5;i>=0;i--)
+    {
+        printf("%c\n",name[i]);
+    }
+}
+#include <stdio.h>
+void main() {
+    char str[100];
+    printf("Enter a string: ");
+    scanf(" %[^\n]s", str);
+    for(int i=0; str[i]!='\0'; i++) {
+        if(str[i]>='a' && str[i]<='z')
+            str[i] -= 32;
+        else if(str[i]>='A' && str[i]<='Z')
+            str[i] += 32;
+    }
+    printf("Converted string: %s\n", str);
+}
