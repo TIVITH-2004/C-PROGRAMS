@@ -1,0 +1,15 @@
+#include<math.h>
+void main()
+{
+    float r,area,avg;
+    scanf("%f",&r);
+    //printf("%f",r);
+    area=(3.14*r*r);
+    //scanf("%f",&area);
+    printf("%f",area);
+    printf("area of the circle: %f",area);
+    avg=(r+area)/2;
+    printf("enter avg: %f",avg);
+
+
+}
