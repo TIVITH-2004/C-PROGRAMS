@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main()
+{
+    signed short int a=32768;
+    //printf("enter the number: ");
+    //scanf("%d",&a);
+    printf("%d",a);
+}
