@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+    int age;
+    float m1;
+    printf("enter :- \n age: \n marks: \n ");
+    scanf("%d\n%f",&age,&m1);
+    printf("%d\n%f",age,m1);
+
+}
