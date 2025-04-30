@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+    int n,x,good;
+     scanf("%d%d",&n,&x);
+     good=n-x;
+     printf("good mangoes= %d",good);
+
+}
