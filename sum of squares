@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+    float a,b,c,d,e;
+    scanf("%f%f",&a,&b);
+    printf("%.2f%.2f",a,b);
+    c=a*a;
+    d=b*b;
+    e=c+d;
+    printf("sum of square: %f",e);
+}
