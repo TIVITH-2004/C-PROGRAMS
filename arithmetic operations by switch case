@@ -24,3 +24,43 @@ void main()
     }
 
 }
+
+//
+
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    double a,b,ch;
+    scanf("%lf%lf",&a,&b);
+    printf("1.addition\n2.subtraction\n3.multiplication\n4.division\n5.modulud\n6.average\n7.power");
+    scanf("%lf",&ch);
+    switch(ch)
+    {
+        case 1:
+              printf("addition: %lf",a+b);
+              break;
+        case 2:
+              printf("subtraction: %lf",a-b);
+              break;
+        case 3:
+              printf("multiplication: %lf",a*b);
+               break;
+        case 4:
+              printf("division: %lf",a/b);
+              break;
+        case 5:
+              printf("modulus: %alignof",a%b);
+              break;
+        case 6:
+              printf("average: %lf",a+b/2);
+              break;
+        case 7:
+              printf("power: %lf,pow(a,b));
+              break;
+        default:
+              printf("invalid");
+    }
+
+}
