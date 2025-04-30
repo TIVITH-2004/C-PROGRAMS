@@ -1,0 +1,26 @@
+#include<stdio.h>
+void main()
+{
+    int a,b,ch;
+    scanf("%d%d",&a,&b);
+    printf("1.addition\n2.subtraction\n3.multiplication\n4.division\n",ch);
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:
+              printf("addition: %d",a+b);
+              break;
+        case 2:
+              printf("subtraction: %d",a-b);
+              break;
+        case 3:
+              printf("multiplication: %d",a*b);
+               break;
+        case 4:
+              printf("division: %d",a/b);
+              break;
+        default:
+              printf("invalid");
+    }
+
+}
